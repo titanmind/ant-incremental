@@ -4,50 +4,24 @@
 		<meta charset="utf-8">
 		<meta http-equiv="x-ua-compatible" content="ie=edge">
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
-		<title>It's Just Two Brothers</title>
+
+		<title>Ant Incremental</title>
+
 		<link rel="stylesheet" href="css/foundation.css">
 		<link rel="stylesheet" href="css/main.css">
-
-		<style>
-		/*Progress Meter Style, move to main.css file when completed*/
-		.progress {
-		  height: 1.25rem;
-		  position: relative;
-		}
-		.progress-meter {
-		  background: $color-primary-0;
-		  transition: width 2s ease-in-out;
-		}
-		#button1 {
-			position: relative;
-			top: 50%;
-		}
-		</style>
-
 	</head>
+
 	<body>
 		<div class="grid-x grid-margin-x" id="header">
 			<div class="small-12 cell text-center"> 
 				<div class="primary callout">
-                	<p><strong>It's just....</strong> Two brothers</p>
+                	<p><strong>A small dark place..</strong></p>
             	</div>
             </div>
 		</div>
 		<div class="grid-x grid-margin-x" id="main">
 			<div class ="cell small-4"></div>
-			<div class ="cell auto">
-				<div class ="grid-y">
-					<div class ="small-10" id ="content">
-						You awake in total darkness. You must wait for your vision to adjust. 
-					</div>
-					
-					<div class = "small-2">
-						<a class="button tiny" id="button1">Wait</a>
-					</div>
-				</div>
-				<div class="progress" aria-valuenow="100">
-      				<div class="progress-meter html"></div>
-    			</div>
+			<div class ="small-4" id ="content">
 			</div>
 			<div class ="cell small-4"></div>
 		</div>
@@ -56,17 +30,5 @@
 		<script src="js/vendor/what-input.js"></script>
 		<script src="js/vendor/foundation.js"></script>
 		<script src="js/main.js"></script>
-		<script>
-			// Progress meter code, move to main.js when completed
-$('.progress-meter').queue(function() {
-  var progWidth  = $(this).parent('.progress').attr('aria-valuenow');
-  
-  $(this).css('width', progWidth +'%' );
-});
-</script>
 	</body>
 </html>
-
-
-
-
