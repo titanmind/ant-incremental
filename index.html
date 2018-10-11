@@ -4,33 +4,57 @@
 		<meta charset="utf-8">
 		<meta http-equiv="x-ua-compatible" content="ie=edge">
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-		<title>Ant Incremental</title>
-
 		<link rel="stylesheet" href="css/foundation.css">
-		<link rel="stylesheet" href="css/main.css">
+		<title>Ant Incremental</title>
 	</head>
 
 	<body>
-		<div class="grid-x grid-margin-x" id="header">
-			<div class="small-12 cell text-left"> 
-				<input type='button' value='save' id='saveButton'>
-				<input type='button' value='load' id='loadButton'>
-				<div class="primary callout text-center">
-                	<p><strong>A small dark place..</strong></p>
-            	</div>
-            </div>
+		<div class="top-bar grid-align-self">
+			<h2>Ant Incremental</h2>
 		</div>
-		<div class="grid-x grid-margin-x" id="main">
-			<div class ="cell small-4"></div>
-			<div class ="small-4" id ="content">
-			</div>
-			<div class ="cell small-4"></div>
+		<div class ="grid-container">
+			<div class="grid-x grid-margin-x">
+				<div class="cell small-3 primary callout" id="RES"> 
+					<div class = "callout">
+						<p>res</p>
+					</div>
+	            </div>
+	            <div class="cell small-9"> 
+	            	<div class ="grid-x grid-margin-x">
+	            		<div class ="cell small-10 primary callout" id="MARQ">
+							<div class = "callout">marq</div>
+						</div>
+						<div class ="cell small-2 primary callout" id="SETT">
+							<input type='button' value='sett' id='sett'>
+						</div>
+					</div>
+					<div class ="grid-x grid-margin-x">
+						<div class = "cell primary callout" id="PROG">
+							<div class = "callout">prog</div>
+						</div>
+					</div>
+	            </div>
+	        </div>
+	        <div class ="grid-x grid-margin-x">
+	        	<div class = "cell small-4">
+			        <div class ="grid-y grid-margin-y">
+			        	<div class = "cell small-6 primary callout" id="JOB">
+			        		<div class = "callout">JOB</div>
+			        	</div>
+			        	<div class = "cell small-6 primary callout" id="MAIN">
+			        		<div class = "callout">main</div>
+			        	</div>		
+			        </div>
+			    </div>
+			    <div class = "cell small-8 primary callout" id="MSG">
+			    	<div class = "callout">msg</div>
+			    </div>
+		    </div>
 		</div>
 
-		<script src="js/vendor/jquery.js"></script>
-		<script src="js/vendor/what-input.js"></script>
-		<script src="js/vendor/foundation.js"></script>
+		<script src="js/jquery.js"></script>
+		<script src="js/what-input.js"></script>
+		<script src="js/foundation.js"></script>
 		<script src="js/main.js"></script>
 	</body>
 </html>
